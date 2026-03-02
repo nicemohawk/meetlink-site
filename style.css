@@ -51,6 +51,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.hero {
+  text-align: center;
+}
+
 .hero p {
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
