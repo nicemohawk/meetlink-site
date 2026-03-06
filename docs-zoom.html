@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom Integration — MeetLink</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1><a href="index.html" class="header-link">MeetLink</a></h1>
+      <p class="tagline">Zoom Integration</p>
+    </header>
+
+    <section class="banner">
+      <p><strong>Note:</strong> MeetLink is not yet publicly available. This documentation is for an upcoming feature currently under review.</p>
+    </section>
+
+    <section>
+      <h2>Overview</h2>
+      <p>MeetLink adds Zoom as a video call option in Apple Calendar on macOS. Once you sign in with your Zoom account, you can create Zoom meetings directly from Calendar.app's <strong>"Add Video Call"</strong> menu — no need to open Zoom or copy-paste links.</p>
+    </section>
+
+    <section>
+      <h2>Prerequisites</h2>
+      <ul>
+        <li>macOS 15.0 (Sequoia) or later</li>
+        <li>A Zoom account (free or paid)</li>
+        <li>MeetLink installed from the Mac App Store</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Getting started</h2>
+
+      <h3>1. Install MeetLink</h3>
+      <p>Download MeetLink from the Mac App Store and open the app.</p>
+
+      <h3>2. Sign in with Zoom</h3>
+      <p>Click <strong>"Sign in with Zoom"</strong> in the MeetLink app. You'll be redirected to Zoom's authorization page in your browser. Sign in with your Zoom credentials and grant MeetLink permission to create meetings on your behalf.</p>
+
+      <h3>3. Enable the Calendar extension</h3>
+      <p>If prompted, enable MeetLink's Calendar extension in System Settings &gt; General &gt; Login Items &amp; Extensions &gt; Calendar. This allows MeetLink to appear in Calendar.app's video call menu.</p>
+
+      <h3>4. Create a Zoom meeting</h3>
+      <ol>
+        <li>Open Calendar.app and create or edit an event</li>
+        <li>Click <strong>"Add Video Call"</strong></li>
+        <li>Select <strong>"Zoom"</strong> from the dropdown</li>
+        <li>A new Zoom meeting link is automatically created and attached to the event</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>What MeetLink accesses</h2>
+      <p>MeetLink requests two Zoom OAuth scopes:</p>
+      <ul>
+        <li><code>meeting:write</code> — to create new Zoom meetings</li>
+        <li><code>user:read</code> — to display your email address in the app</li>
+      </ul>
+      <p>MeetLink does <strong>not</strong> access your existing meetings, recordings, chat messages, or any other Zoom data. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+    </section>
+
+    <section>
+      <h2>Managing your account</h2>
+
+      <h3>Sign out</h3>
+      <p>Open the MeetLink app and click <strong>"Sign Out"</strong> next to your Zoom account. This immediately deletes all stored Zoom credentials from your Mac.</p>
+
+      <h3>Revoke access</h3>
+      <p>To revoke MeetLink's access to your Zoom account, visit <a href="https://marketplace.zoom.us/user/installed">Zoom's installed apps page</a> and remove MeetLink.</p>
+    </section>
+
+    <section>
+      <h2>Removing MeetLink</h2>
+      <ol>
+        <li>Open the MeetLink app and sign out of Zoom</li>
+        <li>Revoke access from your <a href="https://marketplace.zoom.us/user/installed">Zoom account settings</a></li>
+        <li>Delete MeetLink from your Applications folder</li>
+      </ol>
+      <p>Signing out deletes all stored credentials from your Mac's Keychain. MeetLink has no backend server, so no data is retained anywhere after removal.</p>
+    </section>
+
+    <section>
+      <h2>Troubleshooting</h2>
+
+      <h3>Zoom doesn't appear in the "Add Video Call" menu</h3>
+      <p>Restart Calendar.app after installing MeetLink. If Zoom still doesn't appear, check that MeetLink's Calendar extension is enabled in System Settings &gt; General &gt; Login Items &amp; Extensions &gt; Calendar.</p>
+
+      <h3>Sign-in fails or meeting creation errors</h3>
+      <p>Sign out of Zoom in the MeetLink app and sign back in. If the problem persists, revoke MeetLink's access from your <a href="https://marketplace.zoom.us/user/installed">Zoom account settings</a> and re-authorize.</p>
+
+      <h3>Need more help?</h3>
+      <p>Visit our <a href="support.html">Support page</a> or email <a href="mailto:info@nicemohawk.com">info@nicemohawk.com</a>.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Nice Mohawk Limited &middot; <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="support.html">Support</a></p>
+    </footer>
+  </main>
+</body>
+</html>
