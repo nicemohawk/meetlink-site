@@ -90,15 +90,17 @@ section {
 }
 
 .how-it-works-text {
-  flex: 1;
+  flex: 1 1 55%;
+  min-width: 0;
 }
 
 .how-it-works-video {
-  flex: 1;
+  flex: 0 1 280px;
 }
 
 .how-it-works-video video {
   width: 100%;
+  max-height: 360px;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
 }
