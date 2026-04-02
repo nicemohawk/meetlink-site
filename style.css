@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  max-width: 640px;
+  max-width: 820px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
@@ -69,10 +69,44 @@ section {
   transition: background 0.2s;
 }
 
-.coming-soon {
-  background: #d2d2d7;
+.app-store-badge {
+  display: inline-block;
+}
+
+.app-store-badge img {
+  height: 48px;
+}
+
+.providers {
+  font-size: 0.95rem;
   color: #6e6e73;
-  cursor: default;
+  margin-bottom: 1.5rem;
+}
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.how-it-works-text {
+  flex: 1;
+}
+
+.how-it-works-video {
+  flex: 1;
+}
+
+.how-it-works-video video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .how-it-works {
+    flex-direction: column;
+  }
 }
 
 ol {
